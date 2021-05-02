@@ -1,0 +1,25 @@
+{
+	"Import Statement": {
+		"prefix": "imp",
+		"body": [
+			"import ${2:variable} from \"${1:package}\";"
+		],
+		"description": "Import statement"
+	},
+	"React Class Component": {
+		"prefix": "rcc",
+		"body": [
+			"import React, { Component } from \"react\";",
+			"",
+			"export default class ${1:class} extends Component {",
+			"",
+			"\trender () {",
+			"\t\treturn (",
+			"\t\t\t<${2:element}>$0</${2:element}>",
+			"\t\t);",
+			"\t}",
+			"}"
+		],
+		"description": "React class component"
+	}
+}
